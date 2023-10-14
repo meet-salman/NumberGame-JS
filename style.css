@@ -1,0 +1,90 @@
+@font-face {
+    font-family: blomberg;
+    src: url(./font/blomberg.otf);
+
+}
+
+@font-face {
+    font-family: joystix;
+    src: url(./font/joystix-monospace.otf);
+
+}
+
+@font-face {
+    font-family: retganon;
+    src: url(./font/retganon.ttf);
+
+}
+
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
+}
+
+.text-centre {
+    text-align: center;
+}
+
+.justify-centre {
+    justify-content: center;
+}
+
+.gap-2 {
+    gap: 20px;
+}
+
+.gap-5 {
+    gap: 50px;
+}
+
+.mt-4 {
+    margin-top: 40px;
+}
+
+.mt-7 {
+    margin-top: 70px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#score {
+    font-family: joystix;
+}
+
+.num-box {
+    margin: 0;
+    /* padding: 20px; */
+    width: 200px;
+    height: 200px;
+    font-family: blomberg;
+    font-size: 10rem;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: #ccecff;
+    transition: 0.5s;
+}
+
+button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: none;
+    background-color: transparent;
+}
+
+
+#result {
+    font-family: retganon;
+    font-size: 3rem;
+    transition: 0.5s;
+}
