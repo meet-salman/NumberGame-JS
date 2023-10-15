@@ -58,6 +58,7 @@ input::-webkit-inner-spin-button {
 }
 
 #score {
+    /* color: #0066ff; */
     font-family: joystix;
 }
 
@@ -71,7 +72,7 @@ input::-webkit-inner-spin-button {
     border: none;
     outline: none;
     border-radius: 10px;
-    background-color: #ccecff;
+    background-color: #dfebfd;
     transition: 0.5s;
 }
 

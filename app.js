@@ -21,7 +21,7 @@ go.addEventListener('click', () => {
     again.disabled = true;
 
 
-    if (userNum.value === "" || userNum.value > 6) {
+    if (userNum.value === "" || userNum.value > 6 || Number(userNum.value) === 0) {
 
         error.style.color = "red";
         error.innerHTML = 'Please enter number between 1 - 6';
@@ -30,6 +30,7 @@ go.addEventListener('click', () => {
 
         if (Number(userNum.value) !== randomNum) {
 
+            yourScore.style.color = "#0066ff";
             error.innerHTML = '';
             sysNum.innerHTML = randomNum;
 
