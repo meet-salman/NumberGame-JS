@@ -1,3 +1,4 @@
+const game = document.querySelector('#game');
 const yourScore = document.querySelector('#score');
 const sysNum = document.querySelector('#sys-num');
 const userNum = document.querySelector('#user-num');
@@ -14,11 +15,10 @@ go.style.color = "#0077ff";
 again.disabled = true;
 
 
-go.addEventListener('click', () => {
+game.addEventListener('submit', (e) => {
+    e.preventDefault();
 
     let randomNum = Math.ceil(Math.random() * 6);
-
-    again.disabled = true;
 
 
     if (userNum.value === "" || userNum.value > 6 || Number(userNum.value) === 0) {
@@ -37,6 +37,7 @@ go.addEventListener('click', () => {
             yourScore.innerHTML = `Your Score: ${score + Number(userNum.value)}`
             score = score + Number(userNum.value);
 
+            userNum.setAttribute('placeholder' , `${userNum.value}`)
             userNum.value = '';
 
         }
@@ -55,7 +56,6 @@ go.addEventListener('click', () => {
             userNum.style.color = "red";
 
             result.innerHTML = "You're Out";
-            result.style.color = "red";
         }
     }
 });

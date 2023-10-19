@@ -85,6 +85,7 @@ button {
 
 
 #result {
+    color: #ff0000;
     font-family: retganon;
     font-size: 3rem;
     transition: 0.5s;
