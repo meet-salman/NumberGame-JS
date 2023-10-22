@@ -66,4 +66,4 @@ again.addEventListener('click', () => {
 
     location.reload()
 
-})
+});
